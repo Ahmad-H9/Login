@@ -75,13 +75,13 @@ body{
     cursor: pointer;
     font-family: "Poppins", sans-serif;
   }
-  p:last-child{
+  p.last{
     position: relative;
     font-size: 16px;
     font-weight: 400;
   }
-  p:last-child::before,
-  p:last-child::after{
+  p.last::before,
+  p.last::after{
     content: '';
     position: absolute;
     top: 50%;
@@ -90,11 +90,11 @@ body{
     height: 1px;
     background-color: #F0EDFF;
   }
-  p:last-child::before{
-    left: -120px;
+  p.last::before{
+    left: -82%;
   }
-  p:last-child::after{
-    right: -120px;
+  p.last::after{
+    right: -82%;
   }
   .social{
     margin-top: 24px;
@@ -186,6 +186,12 @@ body{
   }
   .user>input, .pass>input{
     width: 290px !important;
+  }
+  p.last::before{
+    left: -44% !important;
+  }
+  p.last::after{
+    right: -44% !important;
   }
   .content>p{
     margin: auto;
